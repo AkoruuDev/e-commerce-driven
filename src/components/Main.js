@@ -1,8 +1,8 @@
 import styled from "styled-components";
 import Products from "../services/Mock";
 
-function Product({ product }) {
-    console.log(product)
+function Product({ product, setShop, shop }) {
+    console.log([product])
     return (
             <ProdBox>
                 <Image src={product.imagem} />
@@ -10,15 +10,20 @@ function Product({ product }) {
                     <p>{product.nome}</p>
                     <p>{product.preco}</p>
                 </Info>
-                <Button>Comprar</Button>
+                <Button onClick={() => setShop([product])}>Comprar</Button>
             </ProdBox>
     )
 }
 
-export default function Main() {
+export default function Main({ setShop, shop }) {
     return(
         <Container>
-            {Products.map(product => <Product key={product.id} product={product} />)}
+            {Products.map(product => <Product
+                key={product.id}
+                product={product}
+                setShop={setShop}
+                shop={shop}
+            />)}
         </Container>
     )
 }
