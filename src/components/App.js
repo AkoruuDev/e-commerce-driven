@@ -9,6 +9,8 @@ export default function App() {
     return(
         <>
             <GlobalStyle />
+            <Main />
+            <Aside />
         </>
     )
 }
