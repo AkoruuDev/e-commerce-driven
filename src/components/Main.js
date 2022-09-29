@@ -1,6 +1,23 @@
 import styled from "styled-components";
 import Products from "../services/Mock";
 
+function buyShop(product, shop, setShop) {
+    let get = false;
+    if(shop.length === 0) {
+        get = true;
+    } else {
+        get = true;
+        for (let i = 0; i < shop.length; i++) {
+            if (shop[i].id === product.id) {
+                get = false;
+            }
+        }
+    }
+    if(get) {
+        setShop([...shop, product]);
+    }
+}
+
 function Product({ product, setShop, shop }) {
     console.log([product])
     return (
@@ -10,7 +27,7 @@ function Product({ product, setShop, shop }) {
                     <p>{product.nome}</p>
                     <p>{product.preco}</p>
                 </Info>
-                <Button onClick={() => setShop([product])}>Comprar</Button>
+                <Button onClick={() => buyShop(product, shop, setShop)}>Comprar</Button>
             </ProdBox>
     )
 }
