@@ -6,3 +6,5 @@ const Products = [
     { id: 5, nome: "Bermuda", preco: "R$40,00", imagem: "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTwkCo0Dmgb7OTEfGgqsazj2ZQoeZIz4nJK5oXC2z1iUuMiLo4UjetiHPQMIJQMlGrAgycqbWLv99j36iiB6TJguNsUv8_OZHUukmoAztlbwcd7K4SkCT-x7sUC&usqp=CAE" },
     { id: 6, nome: "Shorts", preco: "R$60,00", imagem: "https://cdn-images.farfetch-contents.com/14/16/01/84/14160184_18904041_300.jpg" }
   ]
+
+  export default Products;
