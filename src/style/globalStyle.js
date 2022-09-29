@@ -31,6 +31,7 @@ const GlobalStyle = createGlobalStyle`
 	
 	body {
 		line-height: 1;
+        background-color: #f0f0f0;
 	}
 	
 	ol, ul {
