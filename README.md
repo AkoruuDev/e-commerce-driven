@@ -20,8 +20,8 @@ Projeto com a proposta de treinar o uso dos Hooks
 
 <div>
     <a href="https://github.com/AkoruuDev/AkoruuDev/blob/main/padr%C3%A3oDeCommits.md">
-        <img height="150px" src="./images/commit-ebook.png">
-        <img height="150px" src="./images/text-commit.png">
+        <img height="150px" src="./docs/images/commit-ebook.png">
+        <img height="150px" src="./docs/images/text-commit.png">
     </a>
 </div>
 
@@ -46,6 +46,6 @@ Projeto com a proposta de treinar o uso dos Hooks
 
 > Metadados
 <br>
-<a href="https://github.com/AkoruuDev/e-commerce-driven/blob/main/docs/metadados.md" ><img height="150px" src="./images/metadados.png" /></a>
+<a href="https://github.com/AkoruuDev/e-commerce-driven/blob/main/docs/metadados.md" ><img height="150px" src="./docs/images/metadados.png" /></a>
 
 </div>
