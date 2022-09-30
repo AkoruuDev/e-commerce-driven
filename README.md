@@ -2,7 +2,7 @@
 
 Projeto com a proposta de treinar o uso dos Hooks
 
-<a href="https://jogo-da-forca-nn87q9z6b-akoruudev.vercel.app/"><img width="600" src="./docs/images/acessar.png"></a>
+<a href="https://e-commerce-ltfs0ou8g-akoruudev.vercel.app/"><img width="600" src="./docs/images/acessar.png"></a>
 
 ### Tecnologias usadas
 <div style="display: inline_block"><br>
