@@ -1,6 +1,11 @@
 import styled from "styled-components"
 
-function Item({ item }) {
+function handleRemoveItem(setShop, shop, item) {
+    const newArray = shop.filter(prod => prod.id !== item.id)
+    setShop(newArray)
+}
+
+function Item({ item, setShop, shop }) {
     console.log(item)
     return (
         <ProdBox>
@@ -9,7 +14,7 @@ function Item({ item }) {
                 <p>{item.nome}</p>
                 <p>{item.preco}</p>
             </Info>
-            <Button onClick={() => ""}>x</Button>
+            <Button onClick={() => handleRemoveItem(setShop, shop, item)}>x</Button>
         </ProdBox>
     )
 }
@@ -17,7 +22,7 @@ function Item({ item }) {
 export default function Aside({ setShop, shop }) {
     return(
         <Container>
-            {shop?.map(item => <Item key={item.id} item={item} />)}
+            {shop?.map(item => <Item key={item.id} item={item} setShop={setShop} shop={shop} />)}
         </Container>
     )
 }
